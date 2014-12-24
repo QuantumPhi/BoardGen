@@ -7,6 +7,7 @@
 *.sln.docstates
 
 # Build results
+<<<<<<< HEAD
 [Dd]ebug/
 [Dd]ebugPublic/
 [Rr]elease/
@@ -18,6 +19,16 @@ bld/
 
 # Roslyn cache directories
 *.ide/
+
+[Dd]ebug/
+[Rr]elease/
+x64/
+build/
+[Bb]in/
+[Oo]bj/
+
+# Enable "build/" folder in the NuGet Packages folder since NuGet packages use it for MSBuild targets
+!packages/*/build/
 
 # MSTest test Results
 [Tt]est[Rr]esult*/
@@ -59,6 +70,8 @@ dlldata.c
 
 # Chutzpah Test files
 _Chutzpah*
+*.log
+*.scc
 
 # Visual C++ cache files
 ipch/
@@ -103,6 +116,8 @@ AutoTest.Net/
 
 # Web workbench (sass)
 .sass-cache/
+*.ncrunch*
+.*crunch*.local.xml
 
 # Installshield output folder
 [Ee]xpress/
@@ -142,6 +157,14 @@ packages/*
 
 # Windows Azure Build Output
 csx/
+*.Publish.xml
+
+# NuGet Packages Directory
+## TODO: If you have NuGet Package Restore enabled, uncomment the next line
+#packages/
+
+# Windows Azure Build Output
+csx/
 *.build.csdef
 
 # Windows Store app package directory
@@ -159,6 +182,7 @@ ClientBin/
 *.pfx
 *.publishsettings
 node_modules/
+*.[Pp]ublish.xml
 
 # RIA/Silverlight projects
 Generated_Code/
@@ -166,6 +190,8 @@ Generated_Code/
 # Backup & report files from converting an old project file
 # to a newer Visual Studio version. Backup files are not needed,
 # because we have git ;-)
+# Backup & report files from converting an old project file to a newer
+# Visual Studio version. Backup files are not needed, because we have git ;-)
 _UpgradeReport_Files/
 Backup*/
 UpgradeLog*.XML
@@ -187,3 +213,28 @@ FakesAssemblies/
 GeneratedArtifacts/
 _Pvt_Extensions/
 ModelManifest.xml
+App_Data/*.mdf
+App_Data/*.ldf
+
+
+#LightSwitch generated files
+GeneratedArtifacts/
+_Pvt_Extensions/
+ModelManifest.xml
+
+# =========================
+# Windows detritus
+# =========================
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Mac desktop service store files
+.DS_Store
